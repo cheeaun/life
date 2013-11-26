@@ -15,7 +15,7 @@
 - 07/2006-05/2007 CSS Web Designer - MindValley
 - 18/12/2006 First tweet
 - 04/2007 First laptop (HP)
-- 06/2008-07/2009 Web Developer at ZoeCity
+- 06/2008-07/2009 Web Developer - ZoeCity
 - 24/08/2009-26/06/2013 Front-End Developer - Wego
 - 07/2010 Second laptop (Dell)
 - 04/03/2012 HackerWeb featured on Hacker News' front page
