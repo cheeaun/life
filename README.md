@@ -28,7 +28,8 @@ How to setup your own *Life*
 2. `git checkout -b gh-pages` (or any branch name you like)
 3. Make a copy `life.example.md`, rename it to `life.md`.
 4. Add your life events into `life.md`.
-5. `git push origin gh-pages` and publish to [GitHub Pages](http://pages.github.com/).
+5. Commit `life.md` (not in `master` branch).
+6. `git push origin gh-pages` and publish to [GitHub Pages](http://pages.github.com/).
 
 How to upgrade your *Life*
 --------------------------
