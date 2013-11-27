@@ -99,11 +99,29 @@ h1{
 		$el: document.getElementById('life'),
 		yearLength: 120, // 120px per year
 		start: function(){
-			life.fetch(function(response){
-				var data = life.parse(response);
-				var title = life.parseTitle(response);
-				life.render(title, data);
+			life.loadConfig(function(config){
+				if (config.yearLength) life.yearLength = config.yearLength;
+				if (config.customStylesheetURL) life.injectStylesheet(config.customStylesheetURL);
+
+				life.fetch(function(response){
+					var data = life.parse(response);
+					var title = life.parseTitle(response);
+					life.render(title, data);
+				});
 			});
+		},
+		loadConfig: function(fn){
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', 'config.json', true);
+			xhr.onload = function(){
+				if (xhr.status == 200) fn(JSON.parse(xhr.responseText));
+			};
+			xhr.send();
+		},
+		injectStylesheet: function(url){
+			var link = document.createElement('link');
+			link.rel = 'stylesheet';
+			document.body.appendChild(link);
 		},
 		fetch: function(fn){
 			var xhr = new XMLHttpRequest();
