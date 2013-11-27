@@ -219,9 +219,9 @@ h1{
 			html = '';
 			var days = 0;
 
-			for (var y=firstYear; y<=nowYear+1; y++){
+			for (var y=firstYear, age = 0; y<=nowYear+1; y++, age++){
 				html += '<section class="year" style="left: ' + (days*dayLength) + 'px">' +
-					y + ' (' + (y - firstYear) + ')' +
+					y + ' (' + age + ')' +
 					'</section>';
 				days += (y % 4 == 0) ? 366 : 365;
 			}
