@@ -25,15 +25,30 @@ How to setup your own *Life*
 ----------------------------
 
 1. Fork this project.
-2. Edit `life.md`.
-3. Push to `gh-pages` branch and publish to [GitHub Pages](http://pages.github.com/).
+2. `git checkout -b gh-pages` (or any branch name you like)
+3. Make a copy `life.example.md`, rename it to `life.md`.
+4. Add your life events into `life.md`.
+5. `git push origin gh-pages` and publish to [GitHub Pages](http://pages.github.com/).
 
-Special datetime formats
-------------------------
+How to upgrade your *Life*
+--------------------------
 
-- `2001-2005`, `10/2001-02/03/2005` - Within the two dates
-- `~2005` - Around the time in that year
-- `2005-~` - From that year and beyond (now).
+1. `git checkout master`
+2. `git remote add cheeaun https://github.com/cheeaun/life.git`
+3. `git fetch cheeaun` and `git merge cheeaun/master` to upgrade to latest Life.
+4. `git checkout gh-pages` and `git merge master` to sync changes back to GitHub Pages.
+
+[Learn more](https://help.github.com/articles/fork-a-repo).
+
+Datetime "syntax"
+-----------------
+
+- `2000` - event that happen in that year
+- `01/2000` - event that happen in that month/year
+- `01/01/2000` - event that happen exactly in that date/month/year
+- `2001-2005`, `10/2001-02/03/2005` - event that happen within the two dates
+- `~2005` - event that happen around the time in that year
+- `2005-~` - event that happen from that year and beyond (now).
 
 License
 -------
