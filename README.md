@@ -41,6 +41,14 @@ How to upgrade your *Life*
 
 [Learn more](https://help.github.com/articles/fork-a-repo).
 
+How to configure your *Life*
+----------------------------
+
+Modify `config.json`. The configuration:
+
+- `customStylesheetURL` - (*string*, default to `null`) Path to a custom stylesheet file, for those who doesn't like the default *theme*.
+- `yearLength` - (*number*, default to `120`) The width of the year grids, in pixels.
+
 Datetime "syntax"
 -----------------
 
