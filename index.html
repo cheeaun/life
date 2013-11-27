@@ -59,6 +59,7 @@ h1{
 	padding-top: 10px;
 	pointer-events: none;
 	font-weight: 300;
+	white-space: nowrap;
 }
 #life .event{
 	padding-right: 20px;
@@ -217,8 +218,11 @@ h1{
 
 			html = '';
 			var days = 0;
+
 			for (var y=firstYear; y<=nowYear+1; y++){
-				html += '<section class="year" style="left: ' + (days*dayLength) + 'px">' + y + '</section>';
+				html += '<section class="year" style="left: ' + (days*dayLength) + 'px">' +
+					y + ' (' + (y - firstYear) + ')' +
+					'</section>';
 				days += (y % 4 == 0) ? 366 : 365;
 			}
 			data.forEach(function(d){
