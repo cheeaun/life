@@ -26,7 +26,7 @@ How to setup your own *Life*
 
 1. Fork this project.
 2. `git checkout -b gh-pages` (or any branch name you like)
-3. Make a copy `life.example.md`, rename it to `life.md`.
+3. Make a copy of `life.example.md`, rename it to `life.md`.
 4. Add your life events into `life.md`.
 5. Commit `life.md` (not in `master` branch).
 6. `git push origin gh-pages` and publish to [GitHub Pages](http://pages.github.com/).
@@ -44,7 +44,10 @@ How to upgrade your *Life*
 How to configure your *Life*
 ----------------------------
 
-Modify `config.json`. The configuration:
+1. Make a copy of `config.example.json`, rename it to `config.json`.
+2. Only commit it in `gh-pages` branch.
+
+The configuration:
 
 - `customStylesheetURL` - (*string*, default to `null`) Path to a custom stylesheet file, for those who doesn't like the default *theme*.
 - `yearLength` - (*number*, default to `120`) The width of the year grids, in pixels.
