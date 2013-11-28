@@ -114,7 +114,14 @@ h1{
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', 'config.json', true);
 			xhr.onload = function(){
-				if (xhr.status == 200) fn(JSON.parse(xhr.responseText));
+				if (xhr.status == 200){
+					fn(JSON.parse(xhr.responseText));
+				} else {
+					fn({});
+				}
+			};
+			xhr.onerror = xhr.onabort = function(){
+				fn({});
 			};
 			xhr.send();
 		},
