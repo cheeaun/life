@@ -223,7 +223,7 @@ h1{
 				width = daysDiff*dayLength;
 			} else {
 				if (startDate){
-					width = dayLength
+					width = dayLength;
 				} else if (startMonth){
 					width = monthLength;
 				} else {
@@ -242,7 +242,7 @@ h1{
 			var nowYear = new Date().getFullYear();
 			var dayLength = life.yearLength/12/30;
 
-			html = '';
+			var html = '';
 			var days = 0;
 
 			for (var y=firstYear, age = 0; y<=nowYear+1; y++, age++){
