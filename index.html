@@ -98,10 +98,12 @@ h1{
 		$title: document.getElementById('title'),
 		$el: document.getElementById('life'),
 		yearLength: 120, // 120px per year
+		euroDate: false,
 		start: function(){
 			life.loadConfig(function(config){
 				if (config.yearLength) life.yearLength = config.yearLength;
 				if (config.customStylesheetURL) life.injectStylesheet(config.customStylesheetURL);
+				if (config.euroDate) life.euroDate = config.euroDate;
 
 				life.fetch(function(response){
 					var data = life.parse(response);
@@ -170,10 +172,15 @@ h1{
 				var t = time.split('/');
 				data[point + 'Month'] = parseInt(t[0], 10);
 				data[point + 'Year'] = parseInt(t[1], 10);
-			} else if (/^\d+\/\d+\/\d+$/.test(time)){ // DD/MM/YYYY
+			} else if (/^\d+\/\d+\/\d+$/.test(time)){ // DD/MM/YYYY(euro) or MM/DD/YYYY 
 				var t = time.split('/');
-				data[point + 'Date'] = parseInt(t[0], 10);
-				data[point + 'Month'] = parseInt(t[1], 10);
+				if(life.euroDate) {
+					data[point + 'Date'] = parseInt(t[0], 10);
+					data[point + 'Month'] = parseInt(t[1], 10);
+				} else {
+					data[point + 'Date'] = parseInt(t[1], 10);
+					data[point + 'Month'] = parseInt(t[0], 10);				
+				}
 				data[point + 'Year'] = parseInt(t[2], 10);
 			} else if (/\d\-/.test(time)){ // TIME-TIME
 				var splitTime = time.split('-');
