@@ -273,7 +273,7 @@ h1{
 			});
 		},
 		slide: function(event){
-			event.preventDefault()
+			event.preventDefault();
 			slider.slidingDistance = slider.startingPostition - event.clientX;
 			window.scrollTo(slider.pagePosition + slider.slidingDistance, 0);
 		}
