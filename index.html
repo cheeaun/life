@@ -99,6 +99,7 @@ h1{
 </header>
 <div id="life"></div>
 <script>
+
 (function(){
 	var life = {
 		$title: document.getElementById('title'),
@@ -246,7 +247,8 @@ h1{
 
 			var firstYear = life.firstYear = data[0].time.startYear;
 			var nowYear = new Date().getFullYear();
-			var dayLength = life.yearLength/12/30;
+			var yearLength = life.yearLength;
+			var dayLength = yearLength/12/30;
 
 			html = '';
 			var days = 0;
@@ -267,28 +269,34 @@ h1{
 		}
 	}
 
-	life.start();
+	var scroller = {
+		// Can't compare prevX with X because
+		// it breaks trackpad horizontal scrolling.
+		// Still haven't tested in IE.
+		scrollHorizontal: function(e) {
+			e = window.event || e;
 
-	// Comparing x === prevX breaks regular
-	// horizontal scroll on touchpads & wheels.
-	// Not yet tested on IE.
-	scrollX = function(e) {
-		e = window.event || e;
-		if(e.deltaX === 0 || e.wheelDeltaX === 0 || e.axis === 2) {
-			var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-			window.scrollBy(delta * 40, 0); // Multiplied by 40
-			e.preventDefault ? e.preventDefault() : e.returnValue = false;
+			if(e.deltaX === 0 || e.wheelDeltaX === 0 || e.axis === 2) {
+				var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+				window.scrollBy(delta * 40, 0); // Multiplied by 40
+				e.preventDefault ? e.preventDefault() : e.returnValue = false;
+			}
+		},
+		init: function() {
+			if (window.addEventListener) {
+				// IE9, Chrome, Safari, Opera
+				window.addEventListener('mousewheel', scrollHorizontal, false);
+				// Firefox
+				window.addEventListener('DOMMouseScroll', scrollHorizontal, false);
+			} else {
+				// IE 6/7/8
+				window.attachEvent('onmousewheel', scrollHorizontal);
+			}
 		}
 	}
-	if (window.addEventListener) {
-		// IE9, Chrome, Safari, Opera
-		window.addEventListener("mousewheel", scrollX, false);
-		// Firefox
-		window.addEventListener("DOMMouseScroll", scrollX, false);
-	} else {
-		// IE 6/7/8
-		window.attachEvent("onmousewheel", scrollX);
-	}
-})();
 
+	life.start();
+	scroller.init();
+
+})();
 </script>
