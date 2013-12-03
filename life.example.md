@@ -2,7 +2,7 @@
 ===============
 
 - 24/02/1955 Born
-- ~1968 Summer [job](http://en.wikipedia.org/wiki/Beach)!
+- ~1968 Summer [job](http://en.wikipedia.org/wiki/Beach "Job...")!
 - 03/1976 Built a computer
 - 01/04/1976 Started a company
 - 04/1976-2011 Whole bunch of interesting events
