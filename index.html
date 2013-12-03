@@ -234,7 +234,7 @@ h1{
 			// Parse Markdown links in the text
 			// credit: http://stackoverflow.com/a/9268827
 			var link = null;
-			while(link = d.text.match(/\[([^\]]+)\]\(([^)"]+)(?: \"([^\"]+)\")*\)/)) {
+			while(link = d.text.match(/\[([^\]]+)\]\(([^)"]+)(?: \"([^\"]+)\")?\)/)) {
 				var link_attr = "";
 				if (link[3] !== undefined) {
 					link_attr = " title='" + link[3] + "'";
