@@ -41,6 +41,14 @@ How to upgrade your *Life*
 
 [Learn more](https://help.github.com/articles/fork-a-repo).
 
+For those who forked the earlier version of Life, these are the steps that I would recommend (requires some Git-fu):
+
+1. Backup your `life.md`.
+2. Reset (hard) your fork to this repo's `master` branch.
+3. Clean up your `gh-pages`.
+4. Re-commit your `life.md` there.
+5. Make sure your `master` branch is untouched so that future updates work.
+
 How to configure your *Life*
 ----------------------------
 
@@ -57,7 +65,7 @@ Datetime "syntax"
 
 - `2000` - event that happen in that year
 - `01/2000` - event that happen in that month/year
-- `01/01/2000` - event that happen exactly in that date/month/year
+- `01/01/2000` - event that happen exactly in that day/month/year
 - `2001-2005`, `10/2001-02/03/2005` - event that happen within the two dates
 - `~2005` - event that happen around the time in that year
 - `2005-~` - event that happen from that year and beyond (now).
