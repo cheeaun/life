@@ -70,6 +70,11 @@ Datetime "syntax"
 - `~2005` - event that happen around the time in that year
 - `2005-~` - event that happen from that year and beyond (now).
 
+Other people's Lives
+--------------------
+
+Here's [a compilation of Lives from the people who has forked Life](https://github.com/cheeaun/life/wiki/Lives).
+
 License
 -------
 
