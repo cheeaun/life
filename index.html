@@ -3,6 +3,18 @@
 <title>Life</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/ftscroller.js"></script>
+<script>
+	$(document).ready(function() {
+		var scroller = new FTScroller(document.getElementById('parent'), {
+			scrollingY: false,
+			scrollbars: false,
+			bouncing: false,
+			flinging: false
+		});
+	});
+</script>
 <style>
 *{
 	font-family: Open Sans, Helvetica, Arial, sans-serif;
@@ -21,6 +33,7 @@ a{
 }
 header{
 	position: fixed;
+	z-index:2;
 	bottom: 0;
 	margin: 0;
 	padding: 20px;
@@ -44,7 +57,14 @@ h1{
 	font-weight: 300;
 	white-space: nowrap;
 }
+#parent {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
 #life{
+	z-index:1;
 	padding-top: 40px;
 	padding-bottom: 5em;
 }
@@ -90,7 +110,9 @@ h1{
 	<h1 id="title">Life</h1>
 	<a href="https://github.com/cheeaun/life">Fork me</a>
 </header>
-<div id="life"></div>
+<div id="parent">
+	<div id="life"></div>
+</div>
 <script>
 (function(){
 	var life = {
