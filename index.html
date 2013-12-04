@@ -272,25 +272,22 @@ h1{
 	var scroller = {
 		// Can't compare prevX with X because
 		// it breaks trackpad horizontal scrolling.
-		// Still haven't tested in IE.
+		// Still haven't tested in IE10/11.
 		scrollHorizontal: function(e) {
 			e = window.event || e;
 
 			if(e.deltaX === 0 || e.wheelDeltaX === 0 || e.axis === 2) {
 				var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-				window.scrollBy(delta * 40, 0); // Multiplied by 40
+				window.scrollBy(delta * -40, 0);
 				e.preventDefault ? e.preventDefault() : e.returnValue = false;
 			}
 		},
 		init: function() {
 			if (window.addEventListener) {
-				// IE9, Chrome, Safari, Opera
+				// IE, Chrome, Safari, Opera
 				window.addEventListener('mousewheel', this.scrollHorizontal, false);
 				// Firefox
 				window.addEventListener('DOMMouseScroll', this.scrollHorizontal, false);
-			} else {
-				// IE 6/7/8
-				window.attachEvent('onmousewheel', this.scrollHorizontal);
 			}
 		}
 	}
