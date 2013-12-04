@@ -1,4 +1,5 @@
 {
 	"customStylesheetURL": null,
-	"yearLength": 120
+	"yearLength": 120,
+	"hideAge": false
 }

@@ -97,11 +97,27 @@ h1{
 	var life = {
 		$title: document.getElementById('title'),
 		$el: document.getElementById('life'),
-		yearLength: 120, // 120px per year
+		utils: {
+			extend: function(object){
+				var args = Array.prototype.slice.call(arguments, 1);
+				for (var i=0, source; source=args[i]; i++){
+					if (!source) continue;
+					for (var property in source){
+						object[property] = source[property];
+					}
+				}
+				return object;
+			}
+		},
+		config: {
+			yearLength: 120, // 120px per year
+			hideAge: false, // Hide age from year axis
+			customStylesheetURL: null // Custom stylesheet
+		},
 		start: function(){
 			life.loadConfig(function(config){
-				if (config.yearLength) life.yearLength = config.yearLength;
-				if (config.customStylesheetURL) life.injectStylesheet(config.customStylesheetURL);
+				life.config = life.utils.extend(life.config, config)
+				if (life.config.customStylesheetURL) life.injectStylesheet(life.config.customStylesheetURL);
 
 				life.fetch(function(response){
 					var data = life.parse(response);
@@ -193,7 +209,7 @@ h1{
 		firstYear: null,
 		renderEvent: function(d){
 			var firstYear = life.firstYear;
-			var yearLength = life.yearLength;
+			var yearLength = life.config.yearLength;
 			var monthLength = yearLength/12;
 			var dayLength = monthLength/30;
 
@@ -235,13 +251,14 @@ h1{
 			return '';
 		},
 		renderYears: function(firstYear, lastYear){
-			var dayLength = life.yearLength/12/30;
+			var dayLength = life.config.yearLength/12/30;
 			var html = '';
 			var days = 0;
+			var hideAge = life.config.hideAge;
 			for (var y=firstYear, age = 0; y<=lastYear+1; y++, age++){
-				html += '<section class="year" style="left: ' + (days*dayLength).toFixed(2) + 'px">' +
-					y + ' (' + age + ')' +
-					'</section>';
+				html += '<section class="year" style="left: ' + (days*dayLength).toFixed(2) + 'px">'
+					+ y + (hideAge ? '' : (' (' + age + ')'))
+					+ '</section>';
 				days += (y % 4 == 0) ? 366 : 365;
 			}
 			return html;
