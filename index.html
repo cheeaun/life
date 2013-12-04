@@ -116,7 +116,7 @@ h1{
 		},
 		start: function(){
 			life.loadConfig(function(config){
-				life.config = life.utils.extend(life.config, config)
+				life.config = life.utils.extend(life.config, config);
 				if (life.config.customStylesheetURL) life.injectStylesheet(life.config.customStylesheetURL);
 
 				life.fetch(function(response){
@@ -288,7 +288,7 @@ h1{
 			});
 			life.$el.innerHTML = html;
 		}
-	}
+	};
 
 	life.start();
 })();
