@@ -279,7 +279,7 @@ h1{
 			});
 			life.firstYear = firstYear;
 
-			html = life.renderYears(firstYear, lastYear);
+			var html = life.renderYears(firstYear, lastYear);
 			data.forEach(function(d){
 				html += life.renderEvent(d);
 			});
