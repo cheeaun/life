@@ -58,7 +58,8 @@ How to configure your *Life*
 The configuration:
 
 - `customStylesheetURL` - (*string*, default to `null`) Path to a custom stylesheet file, for those who doesn't like the default *theme*.
-- `yearLength` - (*number*, default to `120`) The width of the year grids, in pixels.
+- `yearLength` - (*number*, default to `120`) The width of the year grids, in pixels.  
+- `euroDate` - (bool, default to `false`) Set to `true` if you wish to use European date format in your timeline (DD/MM/YYYY)  
 
 Datetime "syntax"
 -----------------
