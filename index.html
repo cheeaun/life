@@ -98,6 +98,7 @@ h1{
 		$title: document.getElementById('title'),
 		$el: document.getElementById('life'),
 		yearLength: 120, // 120px per year
+		finalYear: new Date().getFullYear(),
 		start: function(){
 			life.loadConfig(function(config){
 				if (config.yearLength) life.yearLength = config.yearLength;
@@ -188,7 +189,20 @@ h1{
 				data.endDate = now.getDate();
 			}
 			data.title = time;
+			life.updateFinalYear(data.startYear, data.endYear);
+			
 			return data;
+		},
+		updateFinalYear: function(startYear, endYear){
+			if (endYear && endYear > life.finalYear) {
+				life.finalYear = endYear;
+			}
+			else if (startYear && startYear > life.finalYear) {
+				life.finalYear = startYear;
+			}
+			else {
+				// noo need to check and update
+			}
 		},
 		firstYear: null,
 		renderEvent: function(d){
@@ -239,13 +253,13 @@ h1{
 			life.$title.innerHTML = title;
 
 			var firstYear = life.firstYear = data[0].time.startYear;
-			var nowYear = new Date().getFullYear();
+			var finalYear = life.finalYear + 1; // add one for better rendering
 			var dayLength = life.yearLength/12/30;
 
 			var html = '';
 			var days = 0;
 
-			for (var y=firstYear, age = 0; y<=nowYear+1; y++, age++){
+			for (var y=firstYear, age = 0; y<=finalYear; y++, age++){
 				html += '<section class="year" style="left: ' + (days*dayLength) + 'px">' +
 					y + ' (' + age + ')' +
 					'</section>';
