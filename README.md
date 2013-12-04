@@ -28,8 +28,9 @@ How to setup your own *Life*
 2. `git checkout -b gh-pages` (or any branch name you like)
 3. Make a copy of `life.example.md`, rename it to `life.md`.
 4. Add your life events into `life.md`.
-5. Commit `life.md` (not in `master` branch).
-6. `git push origin gh-pages` and publish to [GitHub Pages](http://pages.github.com/).
+5. Preview it on a local server. Use [`python -m SimpleHTTPServer`](http://docs.python.org/2/library/simplehttpserver.html) or [`http-server`](https://github.com/nodeapps/http-server).
+6. Commit `life.md` (not in `master` branch).
+7. `git push origin gh-pages` and publish to [GitHub Pages](http://pages.github.com/).
 
 How to upgrade your *Life*
 --------------------------
@@ -69,6 +70,11 @@ Datetime "syntax"
 - `2001-2005`, `10/2001-02/03/2005` - event that happen within the two dates
 - `~2005` - event that happen around the time in that year
 - `2005-~` - event that happen from that year and beyond (now).
+
+Other people's Lives
+--------------------
+
+Here's [a compilation of Lives from the people who has forked Life](https://github.com/cheeaun/life/wiki/Lives).
 
 License
 -------
