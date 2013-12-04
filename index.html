@@ -8,6 +8,12 @@
 *{
 	font-family: Open Sans, Helvetica, Arial, sans-serif;
 }
+html{
+	height: 100%;
+}
+body, #life section.year {
+	min-height: 100%;
+}
 body{
 	color: #fff;
 	background-color: #384047;
@@ -93,6 +99,7 @@ h1{
 </header>
 <div id="life"></div>
 <script>
+
 (function(){
 	var life = {
 		$title: document.getElementById('title'),
@@ -240,7 +247,8 @@ h1{
 
 			var firstYear = life.firstYear = data[0].time.startYear;
 			var nowYear = new Date().getFullYear();
-			var dayLength = life.yearLength/12/30;
+			var yearLength = life.yearLength;
+			var dayLength = yearLength/12/30;
 
 			var html = '';
 			var days = 0;
@@ -255,9 +263,37 @@ h1{
 				html += life.renderEvent(d);
 			});
 			life.$el.innerHTML = html;
+
+			// Fixes bug where mousewheel events aren't triggered once the body is off page
+			document.body.style.width = (nowYear - firstYear) * yearLength + 'px';
+		}
+	}
+
+	var scroller = {
+		// Can't compare prevX with X because
+		// it breaks trackpad horizontal scrolling.
+		// Still haven't tested in IE10/11.
+		scrollHorizontal: function(e) {
+			e = window.event || e;
+
+			if(e.deltaX === 0 || e.wheelDeltaX === 0 || e.axis === 2) {
+				var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+				window.scrollBy(delta * -40, 0);
+				e.preventDefault ? e.preventDefault() : e.returnValue = false;
+			}
+		},
+		init: function() {
+			if (window.addEventListener) {
+				// IE, Chrome, Safari, Opera
+				window.addEventListener('mousewheel', this.scrollHorizontal, false);
+				// Firefox
+				window.addEventListener('DOMMouseScroll', this.scrollHorizontal, false);
+			}
 		}
 	}
 
 	life.start();
+	scroller.init();
+
 })();
 </script>
