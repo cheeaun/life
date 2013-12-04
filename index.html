@@ -259,13 +259,18 @@ h1{
 	}
 
 	var slider = {
-		startingPostition: 0,
-		slidingDistance: 0,
-		pagePosition: 0,
+		startingMousePostition: {},
+		startingPagePosition: {},
 		init: function(){
 			window.addEventListener('mousedown', function(event){
-				slider.startingPostition = event.clientX;
-				slider.pagePosition = window.pageXOffset;
+				slider.startingMousePostition = {
+					x: event.clientX, 
+					y: event.clientY
+				};
+				slider.startingPagePosition = {
+					x: window.pageXOffset, 
+					y: window.pageYOffset
+				};
 				window.addEventListener('mousemove', slider.slide);
 			});
 			window.addEventListener('mouseup', function(event){
@@ -274,8 +279,11 @@ h1{
 		},
 		slide: function(event){
 			event.preventDefault();
-			slider.slidingDistance = slider.startingPostition - event.clientX;
-			window.scrollTo(slider.pagePosition + slider.slidingDistance, 0);
+			newPosition = {
+				x: slider.startingPagePosition.x + (slider.startingMousePostition.x - event.clientX),
+				y: slider.startingPagePosition.y + (slider.startingMousePostition.y - event.clientY)
+			};
+			window.scrollTo(newPosition.x, newPosition.y);
 		}
 	}
 
