@@ -285,12 +285,12 @@ h1{
 		init: function() {
 			if (window.addEventListener) {
 				// IE9, Chrome, Safari, Opera
-				window.addEventListener('mousewheel', scroller.scrollHorizontal, false);
+				window.addEventListener('mousewheel', this.scrollHorizontal, false);
 				// Firefox
-				window.addEventListener('DOMMouseScroll', scroller.scrollHorizontal, false);
+				window.addEventListener('DOMMouseScroll', this.scrollHorizontal, false);
 			} else {
 				// IE 6/7/8
-				window.attachEvent('onmousewheel', scroller.scrollHorizontal);
+				window.attachEvent('onmousewheel', this.scrollHorizontal);
 			}
 		}
 	}
