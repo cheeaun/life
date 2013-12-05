@@ -92,6 +92,7 @@ h1{
 	<a href="https://github.com/cheeaun/life">Fork me</a>
 </header>
 <div id="life"></div>
+<script type="text/javascript" src="js/moment.min.js"></script>
 <script>
 (function(){
 	var life = {
@@ -174,23 +175,17 @@ h1{
 		},
 		parseTime: function(time, point){
 			if (!point) point = 'start';
-			var data = {};
+			var data = {};			
 			if (/^\~\d+$/.test(time)){ // ~YYYY
 				data = {
-					startYear: parseInt(time.slice(1), 10),
+					startYear: moment(time.slice(1), "YYYY", true).year(),
 					estimate: true
 				};
-			} else if (/^\d+$/.test(time)){ // YYYY
-				data[point + 'Year'] = parseInt(time, 10);
-			} else if (/^\d+\/\d+$/.test(time)){ // MM/YYYY
-				var t = time.split('/');
-				data[point + 'Month'] = parseInt(t[0], 10);
-				data[point + 'Year'] = parseInt(t[1], 10);
-			} else if (/^\d+\/\d+\/\d+$/.test(time)){ // DD/MM/YYYY
-				var t = time.split('/');
-				data[point + 'Date'] = parseInt(t[0], 10);
-				data[point + 'Month'] = parseInt(t[1], 10);
-				data[point + 'Year'] = parseInt(t[2], 10);
+			} else if(moment(time, ["YYYY", "MM/YYYY", "DD/MM/YYYY"], true).isValid()){
+				var t = moment(time, ["YYYY", "MM/YYYY", "DD/MM/YYYY"]);
+				data[point + 'Date'] = t.day();
+				data[point + 'Month'] = t.month();
+				data[point + 'Year'] = t.year();
 			} else if (/\d\-/.test(time)){ // TIME-TIME
 				var splitTime = time.split('-');
 				var startTime = life.parseTime(splitTime[0]);
