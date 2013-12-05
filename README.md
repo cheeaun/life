@@ -60,6 +60,7 @@ The configuration:
 
 - `customStylesheetURL` - (*string*, default to `null`) Path to a custom stylesheet file, for those who doesn't like the default *theme*.
 - `yearLength` - (*number*, default to `120`) The width of the year grids, in pixels.
+- `dateFormats` - (array of string, default to ["YYYY", "MM/YYYY", "DD/MM/YYYY"]) Available date formats. You can change it to ["YYYY", "YYYY/MM", "YYYY/MM/DD"].
 
 Datetime "syntax"
 -----------------
