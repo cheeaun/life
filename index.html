@@ -190,13 +190,13 @@ h1{
 					startYear: moment(time.slice(1), "YYYY", true).year(),
 					estimate: true
 				};
-			} else if(moment(time, ["YYYY", "MM/YYYY", "DD/MM/YYYY"], true).isValid()){
-				var t = moment(time, ["YYYY", "MM/YYYY", "DD/MM/YYYY"]);
+			} else if(moment(time, life.config.dateFormats, true).isValid()){
+				var t = moment(time, life.config.dateFormats);
 				data[point + 'Date'] = t.day();
 				data[point + 'Month'] = t.month();
 				data[point + 'Year'] = t.year();
 			} else if (/\d\-/.test(time)){ // TIME-TIME
-				var splitTime = time.split('-');
+				var splitTime = time.split('-'); //bug We cannot use 2013-12-04 format!
 				var startTime = life.parseTime(splitTime[0]);
 				var endTime = life.parseTime(splitTime[1], 'end');
 				for (var k in startTime) { data[k] = startTime[k] }
