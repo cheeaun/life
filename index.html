@@ -161,7 +161,7 @@ h1{
 			list.forEach(function(l){
 				var matches = l.match(/\-\s+([\d\/\-\~]+)\s(.*)/i);
 				var time = matches[1];
-				var tagindex = matches[2].indexOf('[');
+				var tagindex = matches[2].lastIndexOf('[');
 				var text = matches[2].substring(0, tagindex);
 				var tag = (tagindex > -1 ? matches[2].substring(tagindex).replace(/[\[|\]]/gi, '') : '');
 				data.push({
