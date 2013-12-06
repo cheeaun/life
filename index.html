@@ -178,7 +178,7 @@ h1{
 			var data = {};
 			if (/^\~\d+$/.test(time)){ // ~YYYY
 				data = {
-					startYear: moment(time.slice(1), "YYYY", true).year(),
+					startYear: moment(time.slice(1), 'YYYY', true).year(),
 					estimate: true
 				};
 			} else if(moment(time, life.config.dateFormats, true).isValid()){
