@@ -162,7 +162,7 @@ h1{
 				var matches = l.match(/\-\s+([\d\/\-\~]+)\s(.*)/i);
 				var time = matches[1];
 				var tagindex = matches[2].lastIndexOf('[');
-				var text = matches[2].substring(0, tagindex);
+				var text = (tagindex > -1 ? matches[2].substring(0, tagindex) : matches[2]);
 				var tag = (tagindex > -1 ? matches[2].substring(tagindex).replace(/[\[|\]]/gi, '') : '');
 				data.push({
 					time: life.parseTime(time),
