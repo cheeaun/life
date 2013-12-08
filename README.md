@@ -30,7 +30,7 @@ How to setup your own *Life*
 4. Add your life events into `life.md`.
 5. Preview it on a local server. Use [`python -m SimpleHTTPServer`](http://docs.python.org/2/library/simplehttpserver.html) or [`http-server`](https://github.com/nodeapps/http-server).
 6. Commit `life.md` (not in `master` branch).
-7. `git push origin gh-pages` and publish to [GitHub Pages](http://pages.github.com/).
+7. `git push origin gh-pages -f` and publish to [GitHub Pages](http://pages.github.com/).
 
 How to upgrade your *Life*
 --------------------------
@@ -60,6 +60,7 @@ The configuration:
 
 - `customStylesheetURL` - (*string*, default to `null`) Path to a custom stylesheet file, for those who doesn't like the default *theme*.
 - `yearLength` - (*number*, default to `120`) The width of the year grids, in pixels.
+- `hideAge` - (*boolean*, default to `false`) Option to hide age from year axis.
 
 Datetime "syntax"
 -----------------

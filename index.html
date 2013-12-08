@@ -3,7 +3,7 @@
 <title>Life</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
 <style>
 *{
 	font-family: Open Sans, Helvetica, Arial, sans-serif;
@@ -247,6 +247,17 @@ h1{
 				}
 			}
 
+			// Parse Markdown links in the text
+			// credit: http://stackoverflow.com/a/9268827
+			var link = null;
+			while(link = d.text.match(/\[([^\]]+)\]\(([^)"]+)(?: \"([^\"]+)\")?\)/)) {
+				var link_attr = "";
+				if (link[3] !== undefined) {
+					link_attr = " title='" + link[3] + "'";
+				}
+				d.text = d.text.replace(link[0], "<a href='" + link[2] + "'" + link_attr + ">" + link[1] + "</a>");
+			}
+
 			return '<div class="event" style="margin-left: ' + offset.toFixed(2) + 'px">'
 				+ '<div class="time" style="width: ' + width.toFixed(2) + 'px"></div>'
 				+ '<b>' + d.time.title + '</b> ' + d.text + '&nbsp;&nbsp;'
@@ -290,6 +301,34 @@ h1{
 		}
 	};
 
+	var slider = {
+		startingMousePostition: {},
+		startingPagePosition: {},
+		init: function(){
+			window.addEventListener('mousedown', function(event){
+				slider.startingMousePostition = {
+					x: event.clientX,
+					y: event.clientY
+				};
+				slider.startingPagePosition = {
+					x: window.pageXOffset,
+					y: window.pageYOffset
+				};
+				window.addEventListener('mousemove', slider.slide);
+			});
+			window.addEventListener('mouseup', function(event){
+				window.removeEventListener('mousemove', slider.slide);
+			});
+		},
+		slide: function(event){
+			event.preventDefault();
+			var x = slider.startingPagePosition.x + (slider.startingMousePostition.x - event.clientX);
+			var y = slider.startingPagePosition.y + (slider.startingMousePostition.y - event.clientY);
+			window.scrollTo(x, y);
+		}
+	};
+
 	life.start();
+	slider.init();
 })();
 </script>
