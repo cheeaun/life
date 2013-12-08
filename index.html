@@ -301,6 +301,36 @@ h1{
 		}
 	};
 
+	var slider = {
+		startingMousePostition: {},
+		startingPagePosition: {},
+		init: function(){
+			window.addEventListener('mousedown', function(event){
+				slider.startingMousePostition = {
+					x: event.clientX, 
+					y: event.clientY
+				};
+				slider.startingPagePosition = {
+					x: window.pageXOffset, 
+					y: window.pageYOffset
+				};
+				window.addEventListener('mousemove', slider.slide);
+			});
+			window.addEventListener('mouseup', function(event){
+				window.removeEventListener('mousemove', slider.slide);
+			});
+		},
+		slide: function(event){
+			event.preventDefault();
+			newPosition = {
+				x: slider.startingPagePosition.x + (slider.startingMousePostition.x - event.clientX),
+				y: slider.startingPagePosition.y + (slider.startingMousePostition.y - event.clientY)
+			};
+			window.scrollTo(newPosition.x, newPosition.y);
+		}
+	}
+
 	life.start();
+	slider.init();
 })();
 </script>
