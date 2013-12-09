@@ -5,8 +5,11 @@
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
 <style>
-*{
+html{
 	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: grab;
 }
 body{
 	color: #fff;
@@ -257,7 +260,7 @@ h1{
 				}
 				d.text = d.text.replace(link[0], "<a href='" + link[2] + "'" + link_attr + ">" + link[1] + "</a>");
 			}
-			
+
 			return '<div class="event" style="margin-left: ' + offset.toFixed(2) + 'px">'
 				+ '<div class="time" style="width: ' + width.toFixed(2) + 'px"></div>'
 				+ '<b>' + d.time.title + '</b> ' + d.text + '&nbsp;&nbsp;'
