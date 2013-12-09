@@ -190,8 +190,15 @@ h1{
 					startYear: moment(time.slice(1), 'YYYY', true).year(),
 					estimate: true
 				};
-			} else if(moment(time, life.config.dateFormats, true).isValid()){
-				var t = moment(time, life.config.dateFormats);
+			} else if(moment(time, life.config.dateFormats.year, true).isValid()) { // YYYY
+				var t = moment(time, life.config.dateFormats.year, true);
+				data[point + 'Year'] = t.year();
+			} else if(moment(time, life.config.dateFormats.month, true).isValid()) { // MM/YYYY
+				var t = moment(time, life.config.dateFormats.month, true);
+				data[point + 'Month'] = t.month();
+				data[point + 'Year'] = t.year();
+			} else if(moment(time, life.config.dateFormats.day, true).isValid()){ // DD/MM/YYYY
+				var t = moment(time, life.config.dateFormats.day, true);
 				data[point + 'Date'] = t.day();
 				data[point + 'Month'] = t.month();
 				data[point + 'Year'] = t.year();
