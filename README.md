@@ -31,6 +31,8 @@ How to setup your own *Life*
 5. Preview it on a local server. Use [`python -m SimpleHTTPServer`](http://docs.python.org/2/library/simplehttpserver.html) or [`http-server`](https://github.com/nodeapps/http-server).
 6. Commit `life.md` (not in `master` branch).
 7. `git push origin gh-pages -f` and publish to [GitHub Pages](http://pages.github.com/).
+8. Tell the world about your Life.
+9. Add your Life to the [Lives](https://github.com/cheeaun/life/wiki/Lives) page.
 
 How to upgrade your *Life*
 --------------------------
