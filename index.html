@@ -257,7 +257,7 @@ h1{
 				}
 				d.text = d.text.replace(link[0], "<a href='" + link[2] + "'" + link_attr + ">" + link[1] + "</a>");
 			}
-			
+
 			return '<div class="event" style="margin-left: ' + offset.toFixed(2) + 'px">'
 				+ '<div class="time" style="width: ' + width.toFixed(2) + 'px"></div>'
 				+ '<b>' + d.time.title + '</b> ' + d.text + '&nbsp;&nbsp;'
@@ -284,6 +284,10 @@ h1{
 			// Get the first and last year for the year axis
 			var firstYear = new Date().getFullYear();
 			var lastYear = firstYear;
+      var nowYear = new Date().getFullYear();
+      var yearLength = life.yearLength;
+      var dayLength = yearLength/12/30;
+
 			data.forEach(function(d){
 				var time = d.time;
 				var startYear = time.startYear;
@@ -298,6 +302,9 @@ h1{
 				html += life.renderEvent(d);
 			});
 			life.$el.innerHTML = html;
+
+			// Fixes bug where mousewheel events aren't triggered once the body is off page
+      document.body.style.width = (nowYear - firstYear) * yearLength + 'px';
 		}
 	};
 
