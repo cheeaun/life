@@ -5,10 +5,17 @@
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
 <style>
-*{
+html{
 	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: grab;
+}
+html{
+	height: 100%;
 }
 body{
+	min-height: 100%;
 	color: #fff;
 	background-color: #384047;
 	margin: 0;
@@ -50,7 +57,9 @@ h1{
 	padding-bottom: 5em;
 }
 #life section.year{
+	min-height: 100%;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	border-left: 1px dashed rgba(255,255,255,.1);
 	color: rgba(255,255,255,.3);
 	position: absolute;
