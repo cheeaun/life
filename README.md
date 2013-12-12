@@ -14,6 +14,12 @@ Features
 - No fancy effects
 - Flexible datetimes because sometimes you don't remember the exact date of an event
 
+- Themes:
+  - Xmas
+  - Android Light (uses Android colors)
+  - Playful (uses Android colors)
+  - Blueprint
+
 How to contribute
 -----------------
 
@@ -64,6 +70,13 @@ The configuration:
 - `customStylesheetURL` - (*string*, default to `null`) Path to a custom stylesheet file, for those who doesn't like the default *theme*.
 - `yearLength` - (*number*, default to `120`) The width of the year grids, in pixels.
 - `hideAge` - (*boolean*, default to `false`) Option to hide age from year axis.
+
+How To theme your **Life**
+--------
+1. Simply download your choice of `**theme**.css` file and place it into the `life` directory. 
+2. Change the `customStylesheetURL` string in the `config.json` file to the **path** of the downloaded `**theme**.css` file.
+
+The stylesheets were designed to overwrite the default inline styles. Feel free to replace the inline styles with these styles if you'd like that.
 
 Datetime "syntax"
 -----------------
