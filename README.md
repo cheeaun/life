@@ -68,10 +68,9 @@ The configuration:
 
 How to theme your *Life*
 --------
-1. Simply download your choice of `*theme*.css` file and place it into your `life` directory. 
-2. Change the `customStylesheetURL` string in the `config.json` file to the **path** of the downloaded `*theme*.css` file.
+1. In your `config.json` file, change the `customStylesheetURL` string from `null` to `"css/theme.css"`, with quotatation marks.
 
-The stylesheets were designed to overwrite the default inline styles. Feel free to replace the inline styles if you prefer that.
+The stylesheets were designed to overwrite the default inline styles. Feel free to replace the inline styles instead if you'd prefer that.
 
 Datetime "syntax"
 -----------------

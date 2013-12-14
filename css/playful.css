@@ -10,7 +10,7 @@ a {
     opacity: 1; }
 
 header, header h1, header a {
-  color: #33B5E5; }
+  color: rgba(51, 181, 229, 0.8); }
   header h1 {
     opacity: 1; }
   header a {
