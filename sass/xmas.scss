@@ -1,0 +1,50 @@
+body {
+	background-color:#359D6E;
+	color: rgba(255, 255, 255,.8);
+}
+
+a {
+	color: rgba(255, 255, 255,1);
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+header a {
+	color: #B7F8FD;
+	opacity: 0.5;
+}
+
+#life section.year {
+	border-left: 1px dashed rgba(255,255,255,.25);
+	color: rgba(183, 248, 253,.5);
+}
+
+#life .event {
+	b {
+		color:rgba(233, 180, 67,1);
+		-webkit-transition: color 0.5s ease;
+		-moz-transition: color 0.5s ease;
+		-o-transition: color 0.5s ease;
+		-ms-transition: color 0.5s ease;
+		transition: color 0.5s ease;
+	}
+	.time {
+		border-color:#973C31;
+		opacity: 1;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		transition: all 0.5s ease;		
+	}
+	&:hover .time {
+		opacity:1;
+		-webkit-box-shadow: 0px 0px 3px #973C31;
+		-moz-box-shadow: 0px 0px 3px #973C31;
+		-o-box-shadow: 0px 0px 3px #973C31;
+		-ms-box-shadow: 0px 0px 3px #973C31;
+		box-shadow: 0px 0px 3px #973C31;
+	}
+}

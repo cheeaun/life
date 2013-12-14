@@ -1,0 +1,72 @@
+body {
+	background-color: #215480;
+	color:rgba(255,255,255,0.8);
+}
+
+a {
+	color:white;
+	opacity:0.8;
+	text-decoration: none;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;	
+	&:hover {
+		text-decoration:underline;
+		opacity:1;
+	}
+}
+
+header {
+	color:white;
+	h1 {
+		@extend header;
+		opacity: 1;
+	}
+	a {
+		@extend header;
+		opacity:0.8;
+		&:hover {
+			opacity:1;
+		}
+	}
+}
+
+#life section.year {
+	border-left: 1px dashed rgba(255,255,255,.25);
+	color: rgba(255, 255, 255,.75);
+}
+
+#life .event {
+	-webkit-transition: color 0.5s ease;
+	-moz-transition: color 0.5s ease;
+	-o-transition: color 0.5s ease;
+	-ms-transition: color 0.5s ease;
+	transition: color 0.5s ease;	
+	&:hover {
+		color: rgba(255, 255, 255, 1);
+	}
+	b {
+		-webkit-transition: color 0.5s ease;
+		-moz-transition: color 0.5s ease;
+		-o-transition: color 0.5s ease;
+		-ms-transition: color 0.5s ease;
+		transition: color 0.5s ease;
+	}
+	&:hover b {
+		color:rgba(255,255,255,.8);
+	}	
+	.time {
+		border-color: #0099CC;
+		opacity: 0.5;
+		-webkit-transition: opacity 0.5s ease;
+		-moz-transition: opacity 0.5s ease;
+		-o-transition: opacity 0.5s ease;
+		-ms-transition: opacity 0.5s ease;
+		transition: opacity 0.5s ease;
+	}
+	&:hover .time {
+		opacity:0.8;
+	}
+}
