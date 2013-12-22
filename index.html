@@ -136,6 +136,7 @@ h1{
 			});
 		},
 		loadConfig: function(fn){
+			//STANDALONE-CONFIG-START
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', 'config.json', true);
 			xhr.onload = function(){
@@ -149,6 +150,7 @@ h1{
 				fn({});
 			};
 			xhr.send();
+			//STANDALONE-CONFIG-END
 		},
 		injectStylesheet: function(url){
 			var link = document.createElement('link');
@@ -157,12 +159,14 @@ h1{
 			document.body.appendChild(link);
 		},
 		fetch: function(fn){
+			//STANDALONE-LIFE-START
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', 'life.md', true);
 			xhr.onload = function(){
 				if (xhr.status == 200) fn(xhr.responseText);
 			};
 			xhr.send();
+			//STANDALONE-LIFE-END
 		},
 		parse: function(response){
 			var list = response.match(/\-\s+[^\n\r]+/ig);
