@@ -21,3 +21,4 @@
 - 04/03/2012 [HackerWeb featured](https://news.ycombinator.com/item?id=3662709) on Hacker News
 - 01/07/2013-~ Software Engineer - Viki
 - 02/12/2013 [Life featured](https://news.ycombinator.com/item?id=6833565) on Hacker News
+- 24/12/2013 Third laptop/ultrabook (Dell)
