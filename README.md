@@ -25,17 +25,16 @@ How to setup your own *Life*
 ----------------------------
 
 1. Fork this project.
-2. `git checkout -b gh-pages` (or any branch name you like)
-3. install [roots](http://roots.cx): `npm install roots -g`
-4. Add your life events into `life.md`.
-5. Preview your life by running `roots watch` from within the project directory.
-6. When you like it, run `roots compile`.
-7. `./public/index.html` is the resulting self-contained, compiled life. 
-8. Commit `life.md` (not in `master` branch).
-9. Use `roots deploy --gh-pages` to deploy your life to [GitHub Pages](http://pages.github.com/)
-10. Update the website link in your GitHub repo description.
-11. Tell the world about your Life.
-12. Add your Life to the [Lives](https://github.com/cheeaun/life/wiki/Lives) page.
+2. install [roots](http://roots.cx): `npm install roots -g`
+3. Add your life events into `life.md`.
+4. Preview your life by running `roots watch` from within the project directory.
+5. When you like it, run `roots compile`.
+6. `./public/index.html` is the resulting self-contained, compiled life. 
+7. Commit `life.md`.
+8. Use `roots deploy --gh-pages` to deploy your life to [GitHub Pages](http://pages.github.com/)
+9. Update the website link in your GitHub repo description.
+10. Tell the world about your Life.
+11. Add your Life to the [Lives](https://github.com/cheeaun/life/wiki/Lives) page.
 
 How to upgrade your *Life*
 --------------------------
