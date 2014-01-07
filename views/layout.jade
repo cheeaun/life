@@ -6,9 +6,9 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='format-detection', content='telephone=no')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:400,300')
-    link(rel='stylesheet', href='/css/main.css')
+    include ../assets/css/_main.css
   body
     != content
-    script.
+    script
         lifeConfig = !{lifeConfig};
-    script(src='/js/main.js')
+    include ../assets/js/_main.js
