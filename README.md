@@ -26,38 +26,34 @@ How to setup your own *Life*
 
 1. Fork this project.
 2. `git checkout -b gh-pages` (or any branch name you like)
-3. Make a copy of `life.example.md`, rename it to `life.md`.
+3. install [roots](http://roots.cx): `npm install roots -g`
 4. Add your life events into `life.md`.
-5. Preview it on a local server. Use [`python -m SimpleHTTPServer`](http://docs.python.org/2/library/simplehttpserver.html) or [`http-server`](https://github.com/nodeapps/http-server).
-6. Commit `life.md` (not in `master` branch).
-7. `git push origin gh-pages -f` and publish to [GitHub Pages](http://pages.github.com/).
-8. Update the website link in your GitHub repo description.
-9. Tell the world about your Life.
-10. Add your Life to the [Lives](https://github.com/cheeaun/life/wiki/Lives) page.
+5. Preview your life by running `roots watch` from within the project directory.
+6. When you like it, run `roots compile`.
+7. `./public/index.html` is the resulting self-contained, compiled life. 
+8. Commit `life.md` (not in `master` branch).
+9. Use `roots deploy --gh-pages` to deploy your life to [GitHub Pages](http://pages.github.com/)
+10. Update the website link in your GitHub repo description.
+11. Tell the world about your Life.
+12. Add your Life to the [Lives](https://github.com/cheeaun/life/wiki/Lives) page.
 
 How to upgrade your *Life*
 --------------------------
 
-1. `git checkout master`
-2. `git remote add cheeaun https://github.com/cheeaun/life.git`
-3. `git fetch cheeaun` and `git merge cheeaun/master` to upgrade to latest Life.
-4. `git checkout gh-pages` and `git merge master` to sync changes back to GitHub Pages.
+Fetch this repo and rebase your configuration on top of it.
 
 [Learn more](https://help.github.com/articles/fork-a-repo).
 
-For those who forked the earlier version of Life, these are the steps that I would recommend (requires some Git-fu):
+For those who forked the earlier version of Life, these are the steps that I would recommend:
 
 1. Backup your `life.md`.
 2. Reset (hard) your fork to this repo's `master` branch.
-3. Clean up your `gh-pages`.
-4. Re-commit your `life.md` there.
-5. Make sure your `master` branch is untouched so that future updates work.
+3. Re-commit your `life.md`.
 
 How to configure your *Life*
 ----------------------------
 
-1. Make a copy of `config.example.json`, rename it to `config.json`.
-2. Only commit it in `gh-pages` branch.
+Edit `lifeConfig` in `app.coffee`.
 
 The configuration:
 
