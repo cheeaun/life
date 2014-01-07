@@ -16,23 +16,14 @@
 		},
 		config: {
 			yearLength: 120, // 120px per year
-			hideAge: false, // Hide age from year axis
-			customStylesheetURL: null // Custom stylesheet
+			hideAge: false // Hide age from year axis
 		},
 		start: function(){
 			life.config = life.utils.extend(life.config, lifeConfig);
-			if (life.config.customStylesheetURL) life.injectStylesheet(life.config.customStylesheetURL);
-
 
 			var data = life.parse(life.config.markdown);
 			var title = life.parseTitle(life.config.markdown);
 			life.render(title, data);
-		},
-		injectStylesheet: function(url){
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.href = url;
-			document.body.appendChild(link);
 		},
 		parse: function(response){
 			var list = response.match(/\-\s+[^\n\r]+/ig);

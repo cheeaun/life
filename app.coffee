@@ -10,8 +10,8 @@ layouts:
 
 locals:
   lifeConfig: JSON.stringify(
-    customStylesheetURL: null
     yearLength: 120
     hideAge: false
     markdown: String(fs.readFileSync 'life.md')
   )
+  customStylesheetURL: null
