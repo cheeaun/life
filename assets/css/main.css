@@ -1,0 +1,90 @@
+html{
+	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: grab;
+}
+html{
+	height: 100%;
+}
+body{
+	min-height: 100%;
+	color: #fff;
+	background-color: #384047;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	-webkit-text-size-adjust: none;
+	position: relative;
+}
+a{
+	color: #fff;
+}
+header{
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	padding: 20px;
+}
+header a{
+	margin-left: 1em;
+	opacity: .3;
+	text-decoration: none;
+}
+header a:hover{
+	opacity: .7;
+	text-decoration: underline;
+}
+h1{
+	display: inline;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1em;
+	opacity: .5;
+	z-index: 3;
+	font-weight: 300;
+	white-space: nowrap;
+}
+#life{
+	padding-top: 40px;
+	padding-bottom: 5em;
+}
+#life section.year{
+	min-height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-left: 1px dashed rgba(255,255,255,.1);
+	color: rgba(255,255,255,.3);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	padding-left: 10px;
+	padding-top: 10px;
+	pointer-events: none;
+	font-weight: 300;
+	white-space: nowrap;
+}
+#life .event{
+	padding-right: 20px;
+	padding-bottom: 5px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+#life .event b{
+	font-weight: normal;
+	color: rgba(255,255,255,.5);
+}
+#life .event .time{
+	display: inline-block;
+	overflow: hidden;
+	height: 0;
+	border: 4px solid #fff;
+	border-radius: 4px;
+	margin-right: 10px;
+	opacity: .3;
+	position: relative;
+	left: -2px;
+}
+#life .event:hover .time{
+	opacity: .5;
+}
