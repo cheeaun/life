@@ -74,6 +74,7 @@ Datetime "syntax"
 - `2001-2005`, `10/2001-02/03/2005` - event that happen within the two dates
 - `~2005` - event that happen around the time in that year
 - `2005-~` - event that happen from that year and beyond (now).
+- `01/2001-06/2001,09/2001-01/2002` - event that was interrupted.  Use any of the above syntax separated by commas, in chronological order.
 
 Other people's Lives
 --------------------
