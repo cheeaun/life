@@ -289,8 +289,8 @@ h1{
 				buffer.push(marginLeft.toFixed(2));
 				buffer.push('px"></div>');
 
-				// Add border width.
-				var outerWidth = width + 4;
+				// Add twice the border width.
+				var outerWidth = width + 2 * 4;
 				totalLeftOffset += outerWidth + marginLeft;
 			});
 			buffer.push('</div>');
