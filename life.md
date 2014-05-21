@@ -22,3 +22,4 @@
 - 01/07/2013-~ Software Engineer - Viki
 - 02/12/2013 [Life featured](https://news.ycombinator.com/item?id=6833565) on Hacker News
 - 24/12/2013 Third laptop/ultrabook (Dell)
+- 10/01/2014-09/05/2014 First trip to the US (SF and Portland)
