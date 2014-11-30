@@ -24,3 +24,4 @@
 - 24/12/2013 Third laptop/ultrabook (Dell)
 - 10/01/2014-09/05/2014 First trip to US (SF and Portland)
 - 11/09/2014-21/09/2014 First trip to Europe (Berlin)
+- 28/10/2014-8/11/2014 First trip to Australia (Sydney)
