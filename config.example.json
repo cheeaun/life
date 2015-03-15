@@ -6,5 +6,10 @@
 		"year": "YYYY",
 		"month": "MM/YYYY",
 		"day": "DD/MM/YYYY"
+	},
+	"displayFormats": {
+		"year": "YYYY",
+		"month": "MM/YYYY",
+		"day": "DD/MM/YYYY"
 	}
 }
