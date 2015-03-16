@@ -68,7 +68,8 @@ The configuration:
 - `customStylesheetURL` - (*string*, default to `null`) Path to a custom stylesheet file, for those who doesn't like the default *theme*.
 - `yearLength` - (*number*, default to `120`) The width of the year grids, in pixels.
 - `hideAge` - (*boolean*, default to `false`) Option to hide age from year axis.
-- `dateFormats` - (*array*, default to ["YYYY", "MM/YYYY", "DD/MM/YYYY"]) Available date formats. You can change it to ["YYYY", "YYYY/MM", "YYYY/MM/DD"].
+- `dateFormats` - (*array*, default to ["YYYY", "MM/YYYY", "DD/MM/YYYY"]) Available date parsing formats. You can change it to ["YYYY", "YYYY/MM", "YYYY/MM/DD"].
+- `displayFormats` - (*array*, default to ["YYYY", "MM/YYYY", "DD/MM/YYYY"]) Available date display formats. You can change it to ["YYYY", "MMM YYYY", "MMM Do, YYYY"].
 
 Datetime "syntax"
 -----------------
@@ -77,6 +78,7 @@ Datetime "syntax"
 - `01/2000` - event that happen in that month/year
 - `01/01/2000` - event that happen exactly in that day/month/year
 - `2001-2005`, `10/2001-02/03/2005` - event that happen within the two dates
+- `2001~2005`, `10/2001~02/03/2005` - alternative syntax for events that happen within the two dates
 - `~2005` - event that happen around the time in that year
 - `2005-~` - event that happen from that year and beyond (now).
 
