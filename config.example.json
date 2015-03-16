@@ -1,5 +1,15 @@
 {
 	"customStylesheetURL": null,
 	"yearLength": 120,
-	"hideAge": false
+	"hideAge": false,
+	"dateFormats": {
+		"year": "YYYY",
+		"month": "MM/YYYY",
+		"day": "DD/MM/YYYY"
+	},
+	"displayFormats": {
+		"year": "YYYY",
+		"month": "MM/YYYY",
+		"day": "DD/MM/YYYY"
+	}
 }
