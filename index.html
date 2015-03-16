@@ -287,9 +287,6 @@ h1{
 			return html;
 		},
 		render: function(title, data){
-			document.title = title;
-			life.$title.innerHTML = title;
-
 			// Get the first and last year for the year axis
 			var firstYear = new Date().getFullYear();
 			var lastYear = firstYear;
@@ -301,6 +298,12 @@ h1{
 				if (endYear && endYear > lastYear) lastYear = endYear;
 			});
 			life.firstYear = firstYear;
+
+			if (!life.config.hideAge) {
+				title = title + ' (' + (lastYear-life.firstYear) + ' years old)'
+			}
+			document.title = title;
+			life.$title.innerHTML = title;
 
 			var html = life.renderYears(firstYear, lastYear);
 			data.forEach(function(d){
