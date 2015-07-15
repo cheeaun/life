@@ -27,3 +27,4 @@
 - 28/10/2014-8/11/2014 First trip to Australia (Sydney)
 - 23/04/2015-01/05/2015 First trip to New Zealand (Auckland)
 - 09/05/2015-16/05/2015 Second trip to Germany (Düsseldorf and Cologne)
+- 27/06/2015-05/07/2015 First trip to France (Paris)
