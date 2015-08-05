@@ -3,7 +3,7 @@ Life
 
 This is something that I've wanted to build for a long time. It's a **timeline of important events** in my life, visualized in a way my mind always imagine it. There was something called [**Lifepath.me**](http://dcurt.is/facebook-timelines-and-lifepath-me-4) but now it's gone. How about Facebook timeline? Meh.
 
-So, this is it. Have a look at [cheeaun.github.io/life](http://cheeaun.github.io/life).
+So, this is it. Have a look at [cheeaun.life](http://cheeaun.life/).
 
 Features
 --------
@@ -31,6 +31,9 @@ How to setup your own *Life*
 5. Preview it on a local server. Use [`python -m SimpleHTTPServer`](http://docs.python.org/2/library/simplehttpserver.html) or [`http-server`](https://github.com/nodeapps/http-server).
 6. Commit `life.md` (not in `master` branch).
 7. `git push origin gh-pages -f` and publish to [GitHub Pages](http://pages.github.com/).
+8. Update the website link in your GitHub repo description.
+9. Tell the world about your Life.
+10. Add your Life to the [Lives](https://github.com/cheeaun/life/wiki/Lives) page.
 
 How to upgrade your *Life*
 --------------------------
@@ -75,7 +78,7 @@ Datetime "syntax"
 Other people's Lives
 --------------------
 
-Here's [a compilation of Lives from the people who has forked Life](https://github.com/cheeaun/life/wiki/Lives).
+Here's [a compilation of Lives from the people who have forked Life](https://github.com/cheeaun/life/wiki/Lives).
 
 License
 -------
