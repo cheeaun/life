@@ -35,10 +35,6 @@ How to setup your own *Life*
 9. Tell the world about your Life.
 10. Add your Life to the [Lives](https://github.com/cheeaun/life/wiki/Lives) page.
 
-Use [Nitrous.IO](https://www.nitrous.io/?utm_source=github.com&utm_campaign=Life&utm_medium=hackonnitrous) to create your own *Life* in seconds:
-
-[![Hack cheeaun/life on Nitrous.IO](https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png)](https://www.nitrous.io/hack_button?source=embed&runtime=nodejs&repo=cheeaun%2Flife&file_to_open=README)
-
 How to upgrade your *Life*
 --------------------------
 
