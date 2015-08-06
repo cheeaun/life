@@ -28,3 +28,4 @@
 - 23/04/2015-01/05/2015 First trip to New Zealand (Auckland)
 - 09/05/2015-16/05/2015 Second trip to Germany (Düsseldorf and Cologne)
 - 27/06/2015-05/07/2015 First trip to France (Paris)
+- 30/07/2015 Dad passed away
