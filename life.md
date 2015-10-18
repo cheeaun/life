@@ -19,7 +19,7 @@
 - 24/08/2009-26/06/2013 Front-End Developer - Wego
 - 07/2010 Second laptop (Dell)
 - 04/03/2012 [HackerWeb featured](https://news.ycombinator.com/item?id=3662709) on Hacker News
-- 01/07/2013-~ Software Engineer - Viki
+- 01/07/2013-23/10/2015 Software Engineer - Viki
 - 02/12/2013 [Life featured](https://news.ycombinator.com/item?id=6833565) on Hacker News
 - 24/12/2013 Third laptop/ultrabook (Dell)
 - 10/01/2014-09/05/2014 First trip to US (SF and Portland)
@@ -29,3 +29,4 @@
 - 09/05/2015-16/05/2015 Second trip to Germany (Düsseldorf and Cologne)
 - 27/06/2015-05/07/2015 First trip to France (Paris)
 - 30/07/2015 Dad passed away
+- 02/10/2015 First MacBook
