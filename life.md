@@ -30,3 +30,4 @@
 - 27/06/2015-05/07/2015 First trip to France (Paris)
 - 30/07/2015 Dad passed away
 - 02/10/2015 First MacBook
+- 26/10/2015-17/11/2015 First trip to Japan (Tokyo) and second trip to US (SF)
