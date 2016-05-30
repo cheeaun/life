@@ -31,3 +31,6 @@
 - 30/07/2015 Dad passed away
 - 02/10/2015 First MacBook
 - 26/10/2015-17/11/2015 First trip to Japan (Tokyo) and second trip to US (SF)
+- 15/02/2016 Senior Software Engineer (Tech in Asia)
+- 01/03/2016 Launched 1st iOS app on the App Store
+- 20/04/2016 Launched 1st Android app on Google Play
