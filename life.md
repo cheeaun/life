@@ -31,6 +31,8 @@
 - 30/07/2015 Dad passed away
 - 02/10/2015 First MacBook
 - 26/10/2015-17/11/2015 First trip to Japan (Tokyo) and second trip to US (SF)
-- 15/02/2016 Senior Software Engineer (Tech in Asia)
+- 15/02/2016-~ Senior Software Engineer (Tech in Asia)
 - 01/03/2016 Launched 1st iOS app on the App Store
 - 20/04/2016 Launched 1st Android app on Google Play
+- 20/06/2016 Featured on [Digital News Asia](https://www.digitalnewsasia.com/digital-economy/datasets-rest-us-datagovsg)
+- 23/06/2016 Featured on [Channel 8 News](http://www.channel8news.sg/news8/singapore/20160623-sg-ida-govt-data/2898746.html)
