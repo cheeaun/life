@@ -37,3 +37,5 @@
 - 20/06/2016 Featured on [Digital News Asia](https://www.digitalnewsasia.com/digital-economy/datasets-rest-us-datagovsg)
 - 23/06/2016 Featured on [Channel 8 News](http://www.channel8news.sg/news8/singapore/20160623-sg-ida-govt-data/2898746.html)
 - 07/10/2016 Featured on [GovTech conference](https://twitter.com/heliumlife/status/784217428410544128)
+- 25/11/2016 Gave a [talk](https://www.youtube.com/watch?v=V0dKzbhtHpQ) at JSConf.Asia
+- 07/12/2016 Featured on [Tech In Asia Developer Spotlight](https://www.techinasia.com/talk/developer-spotlight-this-frontend-dev-wont-tell-you-where-to-start)
