@@ -167,6 +167,7 @@ h1{
 					var data = life.parse(response);
 					var title = life.parseTitle(response);
 					life.render(title, data);
+					life.MouseEvent();
 				});
 			});
 		},
@@ -344,6 +345,21 @@ h1{
 			});
 			html += '</div>';
 			life.$el.innerHTML = html;
+		},
+		MouseScroll: function(event){
+			event.preventDefault();
+			var rolled = 0;
+			rolled = event.deltaY;
+			if (rolled > 0) {
+				window.scrollBy(100,0);
+			}
+			else if (rolled < 0) {
+				window.scrollBy(-100,0);
+			}
+		},
+		MouseEvent: function(){
+			window.addEventListener('mousewheel', this.MouseScroll, false);
+			window.addEventListener('wheel', this.MouseScroll, false);
 		}
 	};
 
