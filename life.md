@@ -41,3 +41,4 @@
 - 25/11/2016 Gave a [talk](https://www.youtube.com/watch?v=V0dKzbhtHpQ) at JSConf.Asia
 - 07/12/2016 Featured on [Tech In Asia Developer Spotlight](https://www.techinasia.com/talk/developer-spotlight-this-frontend-dev-wont-tell-you-where-to-start)
 - 06/05/2017 Featured on [We Build SG LIVE Podcast](https://live.webuild.sg/046-chee-aun-lim/)
+- 02/06/2017-10/06/2017 First trip to Hong Kong and Macau
