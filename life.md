@@ -43,3 +43,4 @@
 - 06/05/2017 Featured on [We Build SG LIVE Podcast](https://live.webuild.sg/046-chee-aun-lim/)
 - 02/06/2017-10/06/2017 First trip to Hong Kong and Macau
 - 27/07/2017-31/07/2017 Third trip to Japan (Tokyo)
+- 26/10/2017 Fourth laptop/ultrabook/tablet (Chuwi)
