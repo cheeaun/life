@@ -46,3 +46,4 @@
 - 26/10/2017 Fourth laptop/ultrabook/tablet (Chuwi)
 - 26/04/2018-05/05/2018 First trip to Taiwan (Taipei)
 - 18/05/2018-21/05/2018 First trip to South Korea (Seoul)
+- 07/06/2018-14/06/2018 Second trip to Hong Kong and Macau
