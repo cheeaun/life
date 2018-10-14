@@ -28,7 +28,7 @@ How to setup your own *Life*
 2. `git checkout -b gh-pages` (or any branch name you like)
 3. Make a copy of `life.example.md`, rename it to `life.md`.
 4. Add your life events into `life.md`.
-5. Preview it on a local server. Use [`python -m SimpleHTTPServer`](http://docs.python.org/2/library/simplehttpserver.html) or [`http-server`](https://github.com/nodeapps/http-server).
+5. Preview it on a local server. Use [`python -m http.server`](https://docs.python.org/3/library/http.server.html) or [`http-server`](https://github.com/nodeapps/http-server).
 6. Commit `life.md` (not in `master` branch).
 7. `git push origin gh-pages -f` and publish to [GitHub Pages](http://pages.github.com/).
 8. Update the website link in your GitHub repo description.
