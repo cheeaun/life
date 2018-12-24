@@ -47,3 +47,4 @@
 - 26/04/2018-05/05/2018 First trip to Taiwan (Taipei)
 - 18/05/2018-21/05/2018 First trip to South Korea (Seoul)
 - 07/06/2018-14/06/2018 Second trip to Hong Kong and Macau
+- 01/09/2018-27/11/2018 Coaching at [TechLadies bootcamp](http://www.techladies.co/)
