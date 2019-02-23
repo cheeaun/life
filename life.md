@@ -49,3 +49,4 @@
 - 07/06/2018-14/06/2018 Second trip to Hong Kong and Macau
 - 01/09/2018-27/11/2018 Coaching at [TechLadies bootcamp](http://www.techladies.co/)
 - 08/11/2018 Second MacBook (MacBook Air)
+- 11/02/2019 Senior Software Engineer (SWAT)
