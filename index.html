@@ -327,6 +327,10 @@ h1{
 			// Get the first and last year for the year axis
 			var firstYear = new Date().getFullYear();
 			var lastYear = firstYear;
+      var nowYear = new Date().getFullYear();
+      var yearLength = life.yearLength;
+      var dayLength = yearLength/12/30;
+
 			data.forEach(function(d){
 				var time = d.time;
 				var startYear = time.startYear;
@@ -344,6 +348,9 @@ h1{
 			});
 			html += '</div>';
 			life.$el.innerHTML = html;
+
+			// Fixes bug where mousewheel events aren't triggered once the body is off page
+      document.body.style.width = (nowYear - firstYear) * yearLength + 'px';
 		}
 	};
 
