@@ -50,3 +50,4 @@
 - 01/09/2018-27/11/2018 Coaching at [TechLadies bootcamp](http://www.techladies.co/)
 - 08/11/2018 Second MacBook (MacBook Air)
 - 11/02/2019-~ Senior Software Engineer (SWAT)
+- 31/08/2019-08/09/2019 Fourth trip to Japan (Fukuoka), second trip to South Korea (Seoul)
