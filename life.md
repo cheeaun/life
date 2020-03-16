@@ -52,3 +52,4 @@
 - 11/02/2019-~ Senior Software Engineer (SWAT)
 - 31/08/2019-08/09/2019 Fourth trip to Japan (Fukuoka), second trip to South Korea (Seoul)
 - 29/11/2019-08/12/2019 Fifth trip to Japan (Tokyo, Kyoto and Osaka)
+- 07/02/2020-14/02/2020 First trip to Thailand (Bangkok)
