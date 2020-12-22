@@ -29,7 +29,7 @@
 - 09/05/2015-16/05/2015 Second trip to Germany (Düsseldorf and Cologne)
 - 27/06/2015-05/07/2015 First trip to France (Paris)
 - 30/07/2015 Dad passed away
-- 02/10/2015 First MacBook
+- 02/10/2015 First MacBook (MacBook 12")
 - 26/10/2015-17/11/2015 First trip to Japan (Tokyo) and second trip to US (SF)
 - 15/02/2016-31/12/2018 Senior Software Engineer (Tech in Asia)
 - 01/03/2016 Launched 1st iOS app on the App Store
@@ -53,3 +53,4 @@
 - 31/08/2019-08/09/2019 Fourth trip to Japan (Fukuoka), second trip to South Korea (Seoul)
 - 29/11/2019-08/12/2019 Fifth trip to Japan (Tokyo, Kyoto and Osaka)
 - 07/02/2020-14/02/2020 First trip to Thailand (Bangkok)
+- 16/12/2020 Third MacBook (MacBook Air M1)
