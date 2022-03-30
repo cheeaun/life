@@ -54,3 +54,4 @@
 - 29/11/2019-08/12/2019 Fifth trip to Japan (Tokyo, Kyoto and Osaka)
 - 07/02/2020-14/02/2020 First trip to Thailand (Bangkok)
 - 16/12/2020 Third MacBook (MacBook Air M1)
+- 02/03/2022 Interviewed by [Kontinentalist](https://medium.com/kontinentalist/meet-the-community-lim-chee-aun-front-end-engineer-and-map-viz-builder-9760f0db8953)
