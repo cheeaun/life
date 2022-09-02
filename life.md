@@ -49,9 +49,10 @@
 - 07/06/2018-14/06/2018 Second trip to Hong Kong and Macau
 - 01/09/2018-27/11/2018 Coaching at [TechLadies bootcamp](http://www.techladies.co/)
 - 08/11/2018 Second MacBook (MacBook Air)
-- 11/02/2019-~ Senior Software Engineer (SWAT)
+- 11/02/2019-31/06/2022 Senior Software Engineer (SWAT)
 - 31/08/2019-08/09/2019 Fourth trip to Japan (Fukuoka), second trip to South Korea (Seoul)
 - 29/11/2019-08/12/2019 Fifth trip to Japan (Tokyo, Kyoto and Osaka)
 - 07/02/2020-14/02/2020 First trip to Thailand (Bangkok)
 - 16/12/2020 Third MacBook (MacBook Air M1)
 - 02/03/2022 Interviewed by [Kontinentalist](https://medium.com/kontinentalist/meet-the-community-lim-chee-aun-front-end-engineer-and-map-viz-builder-9760f0db8953)
+- 30/07/2022 Fourth MacBook (MacBook Air M2)
