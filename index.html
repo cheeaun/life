@@ -203,7 +203,7 @@ h1{
 			var list = response.match(/\-\s+[^\n\r]+/ig);
 			var data = [];
 			list.forEach(function(l){
-				var matches = l.match(/\-\s+([\d\/\-\~]+)\s(.*)/i);
+				var matches = l.match(/\-\s+([\d\.\-\~]+)\s(.*)/i);
 				var time = matches[1];
 				var text = matches[2];
 				data.push({
@@ -226,15 +226,15 @@ h1{
 				};
 			} else if (/^\d+$/.test(time)){ // YYYY
 				data[point + 'Year'] = parseInt(time, 10);
-			} else if (/^\d+\/\d+$/.test(time)){ // MM/YYYY
-				var t = time.split('/');
-				data[point + 'Month'] = parseInt(t[0], 10);
-				data[point + 'Year'] = parseInt(t[1], 10);
-			} else if (/^\d+\/\d+\/\d+$/.test(time)){ // DD/MM/YYYY
-				var t = time.split('/');
-				data[point + 'Date'] = parseInt(t[0], 10);
+			} else if (/^\d+\.\d+$/.test(time)){ // YYYY.MM
+				var t = time.split('.');
+				data[point + 'Year'] = parseInt(t[0], 10);
 				data[point + 'Month'] = parseInt(t[1], 10);
-				data[point + 'Year'] = parseInt(t[2], 10);
+			} else if (/^\d+\.\d+\.\d+$/.test(time)){ // YYYY.MM.DD
+				var t = time.split('.');
+				data[point + 'Year'] = parseInt(t[0], 10);
+				data[point + 'Month'] = parseInt(t[1], 10);
+				data[point + 'Date'] = parseInt(t[2], 10);
 			} else if (/\d\-/.test(time)){ // TIME-TIME
 				var splitTime = time.split('-');
 				var startTime = life.parseTime(splitTime[0]);
