@@ -1,8 +1,8 @@
-@cheeaun's life
+@Joosung Park's life
 ===============
 
-- 20/06/1985 Born
-- 1991 Kindergarten
+- 2002/1/22 출생
+- 2009/2/6  
 - 1992-1997 Primary school - SKSJ
 - 1998-2000 Secondary school - SMKTI
 - ~2000 First computer
